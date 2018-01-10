@@ -1,0 +1,85 @@
+<html>
+<head>
+<title>Bob's favourite movies</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		// Can do some javascript here
+	})
+
+  function addMovie(){
+    var newTitle = $("#movie-name-button").val();//help us to get the value in the movie title, the $jquery
+
+    //var newMovieInfo = $("#movie-info-button").val();
+
+    alert(newTitle);
+  }
+</script>
+
+
+<style type="text/css">
+	h1 {
+		font-size: 60px;
+    text-align: center;
+    text-decoration: underline;
+
+	}
+  body{
+    background-color:#ffcccc;
+  }
+  h2{
+    font-size: 30px;
+    font-family: "Times New Roman";
+
+  }
+  .checked{
+    color: orange;
+  }
+  #sumbit-button{
+    font-family:"Times New Roman";
+  }
+
+	/* Can add some css here */
+</style>
+
+</head>
+
+<body>
+	<h1>Wendy's site of Favourite Movies</h1>
+
+	<ul id="movie-list">
+		<li class="movie">
+			<h2>Harry Potter</h2>
+      <img
+      src="https://vignette.wikia.nocookie.net/harrypotter/images/9/9d/Harry-Potter-Wizarding-World-Weekly.jpg/revision/latest/scale-to-width-down/670?cb=20160914202759"
+      alt="Harry Potter">
+      <iframe width="480" height="480" src="https://www.youtube.com/embed/3viALj_oqR0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+			<p>Move 1 is about Harry Potter is a series of fantasy novels written by British author J. K. Rowling. The novels chronicle the life of a young wizard, Harry Potter, and his friends Hermione Granger and Ron Weasley, all of whom are students at Hogwarts School of Witchcraft and Wizardry. <a href="https://en.wikipedia.org/wiki/Harry_Potter">Source</a></p>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+		</li>
+
+		<li class="movie">
+			<h2>Movie 2</h2>
+			<p>Move 2 is about y</p>
+		</li>
+
+		<li class="movie">
+			<h2>Movie 3</h2>
+			<p>Move 3 is about z</p>
+		</li>
+	</ul>
+  <input id="movie-name-button"/>
+  <input id="movie-info-button"/>
+  <button id="submit-button" onclick="addMovie()">Add Movie</button>
+</body>
+</html>
